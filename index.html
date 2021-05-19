@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="icon" href="slike/logo.png" type="favicon" sizes="16x16">
+		<title>Hulk smash!</title>
+</head>
+<body onload="drawIt()">
+
+
+<div id="poz"><p id="ppoz">
+			Welcome to the game Hulk smash!</br></br></br>
+			The instructions for the game are simple: </br></br>
+			Smash as many "bricks" as possible.</br>Use the left and the right arrow to move the paddlet</br> To start the game, press the button Start</br>
+			</br></br>Time, score and lives are displayed on top of the screen. Be careful, you only have 3 lives.</br></br> Good luck!</p></div>
+		<button id="button" onclick="drawIt()">Start</button>
+		<div id="restart"><img src="slike/hulkloss.gif" ><p id="ppoz">You lost, better not be angry!</br> Your score is <mark id="tocke2">0</mark> </br>  
+		You played for <mark id="cas2"></mark> seconds</p></div> 
+		<button id="button4" onclick="restart()">Restart</button>
+		<div id="restart2"><img src="slike/hulkvictory.gif" ><p id="ppoz">Congratulations, you samshed them all!</br> Your score is <mark id="tocke3">0</mark> <br>Time: <mark id="cas3">0</mark></br></div> 
+		<p id="livest">Score:<mark id="tocke">0</mark></p>
+<p id="cas">Time: <mark id="cas1">00:00</mark></p>
+<div id="livesl"><p id="lives">Lives:
+		<img id="srcek1" src="slike/srcek.png" width="20" height="20">
+		<img id="srcek2" src="slike/srcek.png" width="20" height="20">
+		<img id="srcek3" src="slike/srcek.png" width="20" height="20"></p></div>
+<canvas id="canvas" width="1500" height="500"></canvas>
+		
+
+		<script src="bricks.js"></script>
+</body>
+</html>
